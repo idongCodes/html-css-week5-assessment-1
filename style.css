@@ -78,6 +78,12 @@ button {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
+button:hover {
+  cursor: pointer;
+  background: hsl(300, 69%, 71%);
+  color: white;
+}
+
 footer {
   padding: 32px 64px;
   display: flex;
@@ -95,6 +101,15 @@ footer > * {
   align-items: center;
   justify-content: center;
   margin: 0 10px;
+}
+
+footer div:hover{
+  cursor: pointer;
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+footer div:hover i {
+  color: hsl(300, 69%, 71%);
 }
 
 /* -------------------------- */
