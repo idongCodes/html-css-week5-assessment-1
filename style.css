@@ -143,3 +143,57 @@ i {
 /* ----------------
 Desktop Styles
 ------------------- */
+@media all and (min-width: 1440px) {
+  html, body, h1, h2, h3, h4, h5, h6, p, button, div, section, header, footer, article, img {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+
+  .logo {
+    width: 16%;
+    position: relative;
+    top: -20px;
+  }
+
+  .container {
+    background-image: url('assets/images/bg-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .content {
+    position: relative;
+    top: 10px;
+    display: flex;
+  }
+
+  .content > * {
+    padding: 3%;
+  }
+
+  .copy-text {
+    width: 65%;
+    text-align: left;
+  }
+
+  .title {
+    margin: 15px 0;
+  }
+
+  button {
+    padding: 13px;
+    width: 200px;
+  }
+
+  footer > * {
+    position: relative;
+    top: -100px;
+    right: -650px;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+  }
+}
