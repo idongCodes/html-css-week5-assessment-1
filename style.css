@@ -29,191 +29,117 @@ i {
   box-sizing: border-box;
 }
 
-/* ----------------
-Desktop Styles
-------------------- */
-
-@media (min-width: 1440px) {
-  body {
-    height: 100vh;
-    margin: 0;
-    background: var(--bg-col);
-
-  }
-  
-  .container {
-    background-image: url("assets/images/bg-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
-  
-  header {
-    padding: 2% 4%;
-  }
-  
-  .content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-  }
-  
-  .content > * {
-    padding: 4% 4% 0;
-  }
-  
-  .copy-text {
-    color: white;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    line-height: 3rem;
-  }
-  
-  .description {
-    font-size: 1.4rem;
-    margin-bottom: 32px;
-  }
-  
-  button {
-    color: var(--bg-col);
-    padding: 1.5%;
-    width: 200px;
-    font-size: large;
-    border-radius: 25px;
-    border: none;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-  }
-  
-  button:hover {
-    cursor: pointer;
-    background: hsl(300, 69%, 71%);
-    color: white;
-  }
-  
-  footer {
-    padding: 32px 64px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  footer > * {
-    border: 1px solid white;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-  }
-  
-  footer div:hover{
-    cursor: pointer;
-    border: 1px solid hsl(300, 69%, 71%);
-  }
-  
-  footer div:hover i {
-    color: hsl(300, 69%, 71%);
-  }
-}
-
 /* -------------------------- */
 /* Mobile Styles  */
 /* -------------------------- */
 
-@media (max-width: 375px) {
+@media all and (min-width: 375px) {
   body {
-    background: hsl(257, 40%, 49%);
     margin: 0;
-    min-width: 375px;
-  }
-
-  .container {
-    background-image: url("assets/images/bg-mobile.svg");
-    background-repeat: no-repeat;
+    background: hsl(257, 40%, 49%);
+    color: white;
+    height: 100vh;
   }
 
   header {
-    padding: 15px;
-  }
-
-  .logo {
-    width: 35%;
-  }
-
-  .content {
-    padding: 15px;
-  }
-
-  .content .header img {
     width: 100%;
   }
 
-  .content > * {
-    margin: 50px 0;
+  .logo {
+    width: 45%;
+    position: relative;
+    top: 30px;
   }
-  
+
+  .container {
+    background-image: url('assets/images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .content {
+    position: relative;
+    top: 70px;
+  }
+
+  .mock-illustration {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
   .copy-text {
     text-align: center;
-    color: white;
+    margin: 30px 0 60px;
+    font-family: var(--body-font);
   }
 
   .title {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    margin-bottom: 0;
+    font-size: xx-large;
+    margin: 30px 0 0;
+    font-family: var(--heading-font)
   }
 
   .description {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    margin-bottom: 25px;
+    font-size: larger;
   }
 
   button {
-    color: var(--bg-col);
-    padding: 1.5%;
+    color: hsl(300, 69%, 71%);
+    background-color: white;
+    position: relative;
+    top: 20px;
+    padding: 15px;
     width: 200px;
-    font-size: large;
-    border-radius: 25px;
     border: none;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    font-size: large;
+    font-family: var(--body-font)
   }
-  
+
   button:hover {
-    cursor: pointer;
-    background: hsl(300, 69%, 71%);
     color: white;
+    background: hsl(300, 69%, 71%);
   }
 
   footer {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 0 0 60px;
+    width: 100%;
+    padding: 15px 0 60px;
+    position: relative;
+    top: 70px;
   }
 
   footer > * {
     border: 1px solid white;
-    width: 30px;
-    height: 30px;
+    margin: 0 8px;
+    width: 20px;
+    height: 20px;
+    padding: 15px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 5px;
   }
-  
-  footer div:hover{
-    cursor: pointer;
+
+  footer > *:hover {
     border: 1px solid hsl(300, 69%, 71%);
   }
-  
+
   footer div:hover i {
     color: hsl(300, 69%, 71%);
   }
 }
+  
+/* ----------------
+Desktop Styles
+------------------- */
